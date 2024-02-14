@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+package-lock.json
+package.json
+readme.md
+vite.config.ts
+.eslintrc.cjs
+.eslintrc.json
