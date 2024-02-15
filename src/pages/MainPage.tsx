@@ -1,13 +1,11 @@
-import { Footer } from "../components/Footer/Footer";
-import { Header } from "../components/Header/Header";
+import AppCatalog from "../components/AppCatalog/AppCatalog";
 import style from "./MainPage.module.scss";
 
 export const MainPage = () => {
   return (
     <div className={style.main_page}>
       <>
-        <Header />
-        <Footer />
+        <AppCatalog />
       </>
     </div>
   );
