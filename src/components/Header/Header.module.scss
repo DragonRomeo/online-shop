@@ -1,0 +1,54 @@
+@use "../../assets/styles/variables.scss" as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 16px;
+  border-bottom: 1px solid;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  width: 27px;
+  height: 27px;
+}
+
+.btns_container {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  gap: 10px;
+  border: 0;
+  transition: color 0.5s;
+}
+
+.button:hover {
+  color: $text-hover;
+}
+
+.select {
+  font-family: inherit;
+  font-size: 18px;
+  background-color: transparent;
+  color: inherit;
+  border: 0;
+  transition: color 0.5s;
+}
+
+.select:hover {
+  color: $text-hover;
+}
