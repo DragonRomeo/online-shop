@@ -21,7 +21,7 @@ export const App = () => {
     };
 
     getData();
-  });
+  }, []);
   return (
     <>
       <DataContext.Provider value={data}>
