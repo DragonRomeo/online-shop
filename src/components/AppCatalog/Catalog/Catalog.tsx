@@ -16,13 +16,15 @@ export const Catalog = () => {
     loadData();
   }, [context]);
 
-  return (
-    products && (
-      <div className={style.products_container}>
-        {products.map((item) => (
-          <ProductCard key={item.id} value={item}></ProductCard>
-        ))}
-      </div>
-    )
+  return products ? (
+    <div className={style.products_container}>
+      {products.map((item) => (
+        <ProductCard key={item.id} value={item}></ProductCard>
+      ))}
+    </div>
+  ) : (
+    <div className={style.loader_container}>
+      <p className={style.loader_message}>Loading...</p>
+    </div>
   );
 };
