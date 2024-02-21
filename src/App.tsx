@@ -1,8 +1,6 @@
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
 import { DataContext } from "./components/providers/context";
-import { MainPage } from "./pages/MainPage";
 import { useEffect, useState } from "react";
+import { AppRouter } from "./pages/routes/AppRouter";
 
 export const App = () => {
   const [data, setData] = useState(null);
@@ -25,9 +23,7 @@ export const App = () => {
   return (
     <>
       <DataContext.Provider value={data}>
-        <Header />
-        <MainPage />
-        <Footer />
+        <AppRouter></AppRouter>
       </DataContext.Provider>
     </>
   );
