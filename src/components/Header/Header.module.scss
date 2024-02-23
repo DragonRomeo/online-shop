@@ -38,6 +38,7 @@
 
 .button:hover {
   color: $text-hover;
+  cursor: pointer;
 }
 
 .select {
@@ -51,4 +52,5 @@
 
 .select:hover {
   color: $text-hover;
+  cursor: pointer;
 }

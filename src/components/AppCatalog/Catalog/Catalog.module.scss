@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2vh;
+  gap: 4vh;
   width: 80%;
+  min-height: 70vh;
 }
 
 .loader_container {

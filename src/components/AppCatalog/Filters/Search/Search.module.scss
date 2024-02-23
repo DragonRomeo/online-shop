@@ -1,7 +1,38 @@
+@use "../../../../assets/styles/variables.scss" as *;
+
+.search_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0f0f0;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
 .search {
   padding: 5px 10px;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 7px;
   font: inherit;
   width: 12vw;
+  background-color: transparent;
+}
+
+.button_search {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font: inherit;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+.button_search:hover {
+  background-color: $text-hover;
+  cursor: pointer;
 }

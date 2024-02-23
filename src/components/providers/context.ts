@@ -1,7 +1,12 @@
 import { createContext, useContext } from "react";
 import { Product } from "../../models/Products";
 
-export const DataContext = createContext<Array<Product> | null>(null);
+export interface IContext {
+  data: Array<Product>;
+  callback: (value: string) => void;
+}
+
+export const DataContext = createContext<IContext | null>(null);
 export const useDataContext = () => {
   const context = useContext(DataContext);
   if (!context) {

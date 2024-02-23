@@ -17,6 +17,7 @@
 .product_card:hover {
   background-color: $grey_light;
   border-color: $grey_light;
+  cursor: pointer;
 }
 
 .img {
@@ -43,4 +44,5 @@
 .product_btn:hover {
   background-color: $text-hover;
   color: $white_accent;
+  cursor: pointer;
 }
