@@ -13,15 +13,17 @@
   background-color: #f0f0f0;
   border: 1px solid $darkreader-neutral-background;
   border-radius: 7px;
-  min-width: 245px;
+  max-width: 278px;
+  width: 100%;
 }
 
 .search {
-  padding: 5px 10px;
+  padding: 5px 0px;
   border: 1px solid transparent;
   border-radius: 7px;
   font: inherit;
   width: 12vw;
+  max-width: 200px;
   background-color: transparent;
 }
 
