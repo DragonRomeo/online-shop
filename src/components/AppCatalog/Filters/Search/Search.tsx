@@ -40,9 +40,15 @@ export const Search = () => {
         onChange={handleChange}
         onKeyDown={handleKeyDown}
       />
-      <button className={style.button_search} onClick={handleClearClick}>
-        <img className={style.search_image} src={crossImage} alt="crossImage" />
-      </button>
+      {value.length > 0 && (
+        <button className={style.button_search} onClick={handleClearClick}>
+          <img
+            className={style.search_image}
+            src={crossImage}
+            alt="crossImage"
+          />
+        </button>
+      )}
       <button className={style.button_search} onClick={handleClick}>
         <img
           className={style.search_image}

@@ -9,9 +9,11 @@
 .label {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #f0f0f0;
   border: 1px solid $darkreader-neutral-background;
   border-radius: 7px;
+  min-width: 245px;
 }
 
 .search {
